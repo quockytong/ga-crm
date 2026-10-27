@@ -1,0 +1,19 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "composite": true,
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.worker.tsbuildinfo",
+    "lib": ["ES2023"],
+    "types": ["node", "@cloudflare/vitest-plugin/types"]
+  },
+  "include": [
+    "worker-configuration.d.ts",
+    "src/server",
+    "src/db",
+    "src/shared",
+    "src/i18n",
+    "test",
+    "scripts",
+    "*.config.ts"
+  ]
+}

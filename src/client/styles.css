@@ -1,0 +1,50 @@
+/* DLVN design system tokens (copied from the design system: tokens/ and assets/figma/). */
+@import "./styles/dlvn/typography.css";
+@import "./styles/dlvn/fig-tokens.css";
+@import "./styles/dlvn/colors.css";
+@import "./styles/dlvn/spacing.css";
+@import "./styles/dlvn/effects.css";
+@import "tailwindcss";
+
+/* App tokens (shadcn/ui naming) mapped onto the DLVN design system.
+   Blue-forward and mostly monochrome: Daiichi blue is the one accent, body text is warm
+   dark grey, cards are outlined with a 1px inset ring (never a drop shadow). */
+@theme {
+  --color-background: var(--surface-page);
+  --color-foreground: var(--text-body);
+  --color-heading: var(--text-heading);
+  --color-card: var(--surface-card);
+  --color-primary: var(--brand-daiichi-life-blue-100);
+  --color-primary-foreground: var(--text-on-accent);
+  --color-link: var(--text-link);
+  --color-muted: var(--brand-blue-10);
+  --color-muted-foreground: var(--neutral-colors-grey-40);
+  --color-eyebrow: var(--text-eyebrow);
+  --color-nav: var(--text-nav);
+  --color-border: var(--border-subtle);
+  --color-input: var(--border-default);
+  --color-ring: var(--brand-blue-100);
+  --color-destructive: var(--accent-alert);
+  /* No secondary hue in the brand: "done" states use the dark brand blue. */
+  --color-success: var(--brand-dark-blue-100);
+  --color-blue-10: var(--brand-blue-10);
+  --color-blue-20: var(--brand-blue-20);
+  --color-blue-40: var(--brand-blue-40);
+  --color-blue-60: var(--brand-blue-60);
+  --color-blue-100: var(--brand-blue-100);
+  --color-light-blue: var(--brand-light-blue-100);
+  --color-highlight: var(--surface-highlight-card);
+  --font-sans: var(--font-sans);
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+  --radius-lg: var(--radius-lg);
+  --radius-xl: var(--radius-xl);
+  --shadow-ring: var(--ring-default);
+  --shadow-ring-highlight: var(--ring-card-highlight);
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+}

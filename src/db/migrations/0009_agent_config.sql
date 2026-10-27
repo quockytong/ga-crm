@@ -1,0 +1,1 @@
+ALTER TABLE `ai_agents` ADD `config` text DEFAULT '{}' NOT NULL;

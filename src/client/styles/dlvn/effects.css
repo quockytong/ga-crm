@@ -1,0 +1,16 @@
+/* Radius, border and shadow language — the file uses hairline insets, not drop shadows. */
+:root{
+  --radius-sm: 4px;         /* "168" counter capsule corner is 4px, not the pill's full radius */
+  --radius-md: 6px;         /* search bar */
+  --radius-lg: 10px;        /* contract summary card */
+  --radius-xl: 11.379px;    /* dashed outer card that frames the contract grid */
+  --radius-pill: 1166.667px;/* fully round counter/pill background */
+
+  /* the file never uses drop shadows — emphasis comes from 1px insets (inset box-shadow) */
+  --ring-default: inset 0 0 0 1px var(--border-default);
+  --ring-card-highlight: inset 0 0 0 1px var(--border-card-highlight);
+  --ring-active-tab: 1.422px solid var(--border-active);
+
+  --border-dashed: 1.422px dashed var(--border-default);
+  --border-hairline: 1px solid var(--border-frame);
+}

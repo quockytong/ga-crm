@@ -1,0 +1,20 @@
+/* Spacing + layout tokens, taken verbatim from the source's auto-layout gaps/padding. */
+:root{
+  --space-1: 2px;
+  --space-2: 4px;
+  --space-3: 8px;
+  --space-4: 12px;
+  --space-5: 16px;
+  --space-6: 22.758px; /* scaled-instance gap in the left contract-type rail */
+  --space-7: 24px;
+  --space-8: 32px;
+  --space-9: 50px;
+
+  /* the source's signature move: very wide horizontal page gutters */
+  --gutter-nav: 200px;      /* utility bar + primary nav side padding */
+  --gutter-section: 220px;  /* secondary "quản lý" nav row side padding */
+
+  --icon-sm: 24px;
+  --icon-md: 42px;
+  --avatar-sm: 50px;
+}

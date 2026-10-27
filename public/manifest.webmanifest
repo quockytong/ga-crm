@@ -1,0 +1,10 @@
+{
+  "name": "GA CRM",
+  "short_name": "GA CRM",
+  "lang": "vi",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1746ff",
+  "icons": []
+}

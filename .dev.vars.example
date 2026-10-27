@@ -1,0 +1,12 @@
+# Copy to .dev.vars for local development. Never commit .dev.vars.
+# Generate with: openssl rand -base64 32
+# In production: wrangler secret put BETTER_AUTH_SECRET
+BETTER_AUTH_SECRET=
+
+# AI assistants: keys of the providers the GA Head may choose (leave empty to disable one).
+# In production: wrangler secret put GEMINI_API_KEY (and DEEPSEEK_API_KEY, QWEN_API_KEY)
+GEMINI_API_KEY=
+DEEPSEEK_API_KEY=
+QWEN_API_KEY=
+# Encrypts the provider keys GA Heads enter in the app (falls back to BETTER_AUTH_SECRET).
+AI_KEYS_SECRET=

@@ -1,0 +1,20 @@
+/* Generated from Figma Variables. First mode = :root default.
+   FLOAT tokens are unitless — multiply by 1px in calc() where a length is needed. */
+
+:root {
+  --brand-blue-100: rgb(0,145,255); /* @kind color */
+  --brand-blue-10: rgb(230,244,255); /* @kind color */
+  --brand-blue-20: rgb(204,233,255); /* @kind color */
+  --brand-blue-40: rgb(153,211,255); /* @kind color */
+  --brand-blue-60: rgb(102,189,255); /* @kind color */
+  --brand-daiichi-life-blue-100: rgb(23,70,255); /* @kind color */
+  --brand-dark-blue-100: rgb(0,0,100); /* @kind color */
+  --brand-light-blue-100: rgb(78,218,255); /* @kind color */
+  --neutral-colors-grey-100-2: rgb(47,51,64); /* @kind color */
+  --neutral-colors-grey-100: rgb(47,51,64); /* @kind color */
+  --neutral-colors-grey-10: rgb(220,222,229); /* @kind color */
+  --neutral-colors-grey-20: rgb(184,189,203); /* @kind color */
+  --neutral-colors-grey-40: rgb(113,122,151); /* @kind color */
+  --neutral-colors-grey-60: rgb(87,95,118); /* @kind color */
+  --sub-yellow-red-100: rgb(230,70,90); /* @kind color */
+}

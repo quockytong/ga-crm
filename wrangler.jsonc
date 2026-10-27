@@ -1,0 +1,31 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "ga-crm",
+  "main": "src/server/index.ts",
+  "compatibility_date": "2026-06-01",
+  "compatibility_flags": ["nodejs_compat"],
+  // One Worker serves the API and the built React app.
+  "assets": {
+    "not_found_handling": "single-page-application",
+    "run_worker_first": ["/api/*"]
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "ga-crm",
+      // Create with: wrangler d1 create ga-crm --location apac
+      // then paste the returned id here.
+      "database_id": "00000000-0000-0000-0000-000000000000",
+      "migrations_dir": "src/db/migrations"
+    }
+  ],
+  // Original uploaded workbooks. Create with: wrangler r2 bucket create ga-crm-uploads
+  // 90-day retention is a lifecycle rule on the bucket (see README).
+  "r2_buckets": [{ "binding": "UPLOADS", "bucket_name": "ga-crm-uploads" }],
+  "vars": {
+    // Public origin of the app. Used for auth cookies, CSRF checks and invite links.
+    // Override for the deployed instance.
+    "APP_URL": "http://localhost:5173"
+  },
+  "observability": { "enabled": true }
+}

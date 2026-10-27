@@ -1,0 +1,44 @@
+/* Dai-ichi Life Vietnam — color tokens.
+   Base values come 1:1 from the file's Figma Variables (see ../assets/figma/fig-tokens.css).
+   This layer adds: (a) high-frequency colors the file uses constantly but never
+   promoted to a Variable, and (b) semantic aliases for how the screen actually uses color. */
+
+:root{
+  /* --- extra base colors seen constantly in the source but not in the Variables collection --- */
+  --gray-900: rgb(41,41,41);      /* body copy — the single most-used text color in the file */
+  --gray-500: rgb(114,114,114);   /* section eyebrow text, icon strokes, hairline borders */
+  --gray-300: rgb(157,157,157);   /* outer frame hairline */
+  --white: rgb(255,255,255);
+  --black: rgb(0,0,0);            /* reserved for the one true-black headline in the file */
+
+  /* --- semantic aliases: surfaces --- */
+  --surface-page: var(--white);
+  --surface-card: var(--white);
+  --surface-utility-bar: var(--brand-blue-20);      /* thin top bar behind "Mạng lưới hoạt động / Liên hệ" */
+  --surface-nav-active: var(--brand-blue-40);        /* active primary nav pill ("Trang chủ") */
+  --surface-badge-notification: var(--brand-daiichi-life-blue-100); /* "168" cart-style counter */
+  --surface-user-card: var(--brand-blue-20);         /* greeting card behind avatar + name */
+  --surface-highlight-card: rgb(179,222,255);        /* selected contract card fill */
+  --surface-tab-underline-wash: var(--brand-blue-10);/* soft multiply wash under the active section tab */
+
+  /* --- semantic aliases: text --- */
+  --text-body: var(--gray-900);
+  --text-heading: var(--black);
+  --text-eyebrow: var(--gray-500);
+  --text-nav: var(--neutral-colors-grey-100);
+  --text-nav-muted: var(--neutral-colors-grey-40);
+  --text-nav-secondary: var(--neutral-colors-grey-60);
+  --text-link: var(--brand-blue-100);
+  --text-on-accent: var(--white);
+  --text-on-badge: var(--white);
+
+  /* --- semantic aliases: borders --- */
+  --border-default: var(--neutral-colors-grey-20);
+  --border-subtle: var(--neutral-colors-grey-10);
+  --border-active: var(--brand-blue-100);
+  --border-card-highlight: var(--brand-blue-60);
+  --border-frame: var(--gray-300);
+
+  /* --- brand accent (rarely used, reserved for alerts/destructive) --- */
+  --accent-alert: var(--sub-yellow-red-100);
+}
